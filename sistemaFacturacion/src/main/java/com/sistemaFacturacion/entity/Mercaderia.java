@@ -12,32 +12,26 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "entidades")
+@Table(name = "mercaderias")
 @Getter
 @Setter
-public class Entidad implements Serializable{
-	
+public class Mercaderia implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 
-	@Id
-	@Column(name = "cod_entidad")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
-	
-	@Column
-	private String documento;
-	
-	@Column
-	private String nombre;
-	
-	@Column
-	private String apellido;
-	
-	@Column
-	private String email;
-	
-	@Column
-	private String telefono;
+    @Id
+    @Column(name = "cod_mercaderia")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name = "nombre_mercaderia")
+    private String nombre;
+    
+    private Double precio;
+
+    public String getIdNome() {
+        return "(" + id + ") " + nombre;
+    }
+
 
 }
