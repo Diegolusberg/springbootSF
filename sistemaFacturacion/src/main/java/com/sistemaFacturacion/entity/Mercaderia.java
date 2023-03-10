@@ -20,7 +20,6 @@ public class Mercaderia implements Serializable{
 	private static final long serialVersionUID = 1L;
 
     @Id
-    @Column(name = "cod_mercaderia")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
