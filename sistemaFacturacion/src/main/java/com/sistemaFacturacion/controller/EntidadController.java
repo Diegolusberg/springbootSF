@@ -12,7 +12,7 @@ import com.sistemaFacturacion.entity.Entidad;
 import com.sistemaFacturacion.service.EntidadService;
 
 @RestController
-@RequestMapping("/entidad")
+@RequestMapping("/entidades")
 public class EntidadController {
 	
 	@Autowired

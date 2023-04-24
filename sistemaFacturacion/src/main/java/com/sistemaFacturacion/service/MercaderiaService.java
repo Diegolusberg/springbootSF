@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.sistemaFacturacion.entity.Mercaderia;
 import com.sistemaFacturacion.repository.MercaderiaRepository;
 
-import jakarta.persistence.EntityNotFoundException;
+import javax.persistence.EntityNotFoundException;
 
 @Service
 public class MercaderiaService {

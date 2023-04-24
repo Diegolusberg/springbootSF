@@ -3,13 +3,12 @@ package com.sistemaFacturacion.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.crossstore.ChangeSetPersister.NotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.sistemaFacturacion.entity.Entidad;
 import com.sistemaFacturacion.repository.EntidadRepository;
 
-import jakarta.persistence.EntityNotFoundException;
+import javax.persistence.EntityNotFoundException;
 
 @Service
 public class EntidadService {

@@ -43,3 +43,6 @@ INSERT INTO facturas_items (cantidad, factura_id, mercaderia_id) VALUES(1, 1, 7)
 
 INSERT INTO facturas (descripcion, observacion, entidad_cod_entidad, create_at) VALUES('Factura Bicicleta', 'Alguna nota importante!', 1, NOW());
 INSERT INTO facturas_items (cantidad, factura_id, mercaderia_id) VALUES(3, 2, 6);
+
+/* Creamos usuario */
+INSERT INTO usuarios(username, password) VALUES('diegolusberg', 12345);
